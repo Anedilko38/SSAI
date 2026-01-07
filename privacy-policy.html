@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SmartScheduleAI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .app-name {
+            font-size: 1.2em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .language-switch {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .language-switch button {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 10px 25px;
+            margin: 0 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: #667eea;
+        }
+
+        .language-switch button:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .language-switch button.active {
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .effective-date {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .intro {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+        }
+
+        .contact-box a:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 50px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <p class="app-name">SmartScheduleAI</p>
+            
+            <div class="language-switch">
+                <button onclick="switchLanguage('en')" id="btn-en" class="active">English</button>
+                <button onclick="switchLanguage('uk')" id="btn-uk">Українська</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- English Version -->
+            <div id="lang-en" class="lang-section active">
+                <div class="effective-date">
+                    📅 Effective date: January 7, 2026
+                </div>
+
+                <p class="intro">
+                    This Privacy Policy explains how <span class="highlight">SmartScheduleAI</span> ("we", "our", "the app") collects, uses, and shares information when you use the mobile application.
+                </p>
+
+                <h2>1. Information We Collect</h2>
+                
+                <div class="section">
+                    <h3>📧 Account information</h3>
+                    <ul>
+                        <li>Email address (for authentication via Firebase Authentication).</li>
+                    </ul>
+
+                    <h3>📝 User content you enter</h3>
+                    <ul>
+                        <li>Text you create in the app (e.g., tasks, ideas, dreams, gratitude entries).</li>
+                    </ul>
+
+                    <h3>🎤 Voice input</h3>
+                    <ul>
+                        <li>If you use voice input, the app records audio on your device and sends it to our server endpoint for transcription.</li>
+                    </ul>
+
+                    <h3>📱 Device/technical data</h3>
+                    <ul>
+                        <li>We may collect basic technical logs necessary to operate the service (e.g., error logs) through our infrastructure providers.</li>
+                    </ul>
+                </div>
+
+                <h2>2. How We Use Information</h2>
+                <p>We use your information to:</p>
+                <ul>
+                    <li>Provide the app features (saving and syncing tasks/ideas/dreams/gratitude).</li>
+                    <li>Authenticate you and secure access to your data.</li>
+                    <li>Transcribe your voice input into text.</li>
+                    <li>Prevent abuse and protect the service (e.g., rate limiting).</li>
+                </ul>
+
+                <h2>3. Where Your Data Is Stored</h2>
+                <p>Your account and app data are stored in <strong>Google Firebase services</strong>, including Firebase Authentication and Firestore (Google Cloud).</p>
+
+                <h2>4. Sharing of Information</h2>
+                <div class="section">
+                    <p><strong>We do not sell your personal information.</strong></p>
+                    <p>We may share information with service providers strictly to operate the app:</p>
+                    <ul>
+                        <li><strong>Google Firebase</strong> (authentication and database).</li>
+                        <li><strong>OpenAI</strong> (voice transcription). Voice audio is sent to our server, then forwarded to OpenAI for transcription.</li>
+                    </ul>
+                </div>
+
+                <h2>5. Data Retention</h2>
+                <p>We retain your data while your account is active.</p>
+                <p>You can delete your account and associated data from within the app using the <strong>"Delete account"</strong> feature.</p>
+
+                <h2>6. Security</h2>
+                <p>We take reasonable measures to protect your data. However, no method of transmission or storage is 100% secure.</p>
+
+                <h2>7. Children's Privacy</h2>
+                <p>The app is not intended for children under the age of 13. We do not knowingly collect personal data from children.</p>
+
+                <h2>8. Your Rights</h2>
+                <p>Depending on your location, you may have rights to access, correct, or delete your personal data. You can delete your account and data from within the app.</p>
+
+                <h2>9. Changes to This Policy</h2>
+                <p>We may update this policy from time to time. We will update the "Effective date" and publish the new version.</p>
+
+                <div class="contact-box">
+                    <h2 style="color: white; border: none; margin: 0 0 10px 0; padding: 0;">10. Contact</h2>
+                    <p style="margin: 0;">If you have questions, contact us at: <a href="mailto:support@YOURDOMAIN.com">support@YOURDOMAIN.com</a></p>
+                </div>
+            </div>
+
+            <!-- Ukrainian Version -->
+            <div id="lang-uk" class="lang-section">
+                <div class="effective-date">
+                    📅 Дата набрання чинності: 7 січня 2026 р.
+                </div>
+
+                <p class="intro">
+                    Ця Політика конфіденційності пояснює, як <span class="highlight">SmartScheduleAI</span> ("ми", "наш додаток") збирає, використовує та передає інформацію, коли ви користуєтеся мобільним додатком.
+                </p>
+
+                <h2>1. Які дані ми збираємо</h2>
+                
+                <div class="section">
+                    <h3>📧 Дані акаунта</h3>
+                    <ul>
+                        <li>Email (для автентифікації через Firebase Authentication).</li>
+                    </ul>
+
+                    <h3>📝 Контент, який ви створюєте</h3>
+                    <ul>
+                        <li>Текст, який ви вводите в додатку (завдання, ідеї, сни, подяка).</li>
+                    </ul>
+
+                    <h3>🎤 Голосовий ввід</h3>
+                    <ul>
+                        <li>Якщо ви користуєтесь голосовим вводом, додаток записує аудіо на вашому пристрої та надсилає його на наш сервер для транскрипції.</li>
+                    </ul>
+
+                    <h3>📱 Технічні дані</h3>
+                    <ul>
+                        <li>Ми можемо збирати базові технічні логи, необхідні для роботи сервісу (наприклад, помилки) через наших інфраструктурних провайдерів.</li>
+                    </ul>
+                </div>
+
+                <h2>2. Як ми використовуємо дані</h2>
+                <p>Ми використовуємо дані, щоб:</p>
+                <ul>
+                    <li>Надавати функції додатку (збереження і синхронізація даних).</li>
+                    <li>Автентифікувати користувача та захищати доступ до даних.</li>
+                    <li>Перетворювати голос у текст.</li>
+                    <li>Запобігати зловживанням і захищати сервіс (наприклад, rate limiting).</li>
+                </ul>
+
+                <h2>3. Де зберігаються дані</h2>
+                <p>Ваш акаунт і дані зберігаються у сервісах <strong>Google Firebase</strong>, зокрема Firebase Authentication та Firestore (Google Cloud).</p>
+
+                <h2>4. Передача даних третім сторонам</h2>
+                <div class="section">
+                    <p><strong>Ми не продаємо ваші персональні дані.</strong></p>
+                    <p>Ми можемо передавати дані провайдерам, необхідним для роботи додатку:</p>
+                    <ul>
+                        <li><strong>Google Firebase</strong> (автентифікація та база даних).</li>
+                        <li><strong>OpenAI</strong> (транскрипція голосу). Аудіо надсилається на наш сервер і далі передається в OpenAI для транскрипції.</li>
+                    </ul>
+                </div>
+
+                <h2>5. Зберігання та видалення</h2>
+                <p>Ми зберігаємо дані, поки ваш акаунт активний.</p>
+                <p>Ви можете видалити акаунт і всі пов'язані дані прямо в додатку через функцію <strong>"Видалити акаунт"</strong>.</p>
+
+                <h2>6. Безпека</h2>
+                <p>Ми застосовуємо розумні заходи безпеки, але жоден спосіб передачі або зберігання не гарантує 100% захист.</p>
+
+                <h2>7. Діти</h2>
+                <p>Додаток не призначений для дітей до 13 років. Ми свідомо не збираємо дані дітей.</p>
+
+                <h2>8. Ваші права</h2>
+                <p>Залежно від вашої юрисдикції, ви можете мати право доступу/виправлення/видалення даних. Ви можете видалити акаунт і дані в додатку.</p>
+
+                <h2>9. Зміни</h2>
+                <p>Ми можемо час від часу оновлювати цю політику. Ми оновимо дату набрання чинності та опублікуємо нову версію.</p>
+
+                <div class="contact-box">
+                    <h2 style="color: white; border: none; margin: 0 0 10px 0; padding: 0;">10. Контакти</h2>
+                    <p style="margin: 0;">Якщо у вас є питання, напишіть: <a href="mailto:support@YOURDOMAIN.com">support@YOURDOMAIN.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 SmartScheduleAI. All rights reserved.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Made with ❤️ for better productivity</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all language sections
+            document.querySelectorAll('.lang-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Update button states
+            document.querySelectorAll('.language-switch button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById('btn-' + lang).classList.add('active');
+            
+            // Update page title
+            if (lang === 'en') {
+                document.title = 'Privacy Policy - SmartScheduleAI';
+            } else {
+                document.title = 'Політика конфіденційності - SmartScheduleAI';
+            }
+        }
+    </script>
+</body>
+</html>
